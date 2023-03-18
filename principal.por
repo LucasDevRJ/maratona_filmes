@@ -4,6 +4,7 @@ programa
 	funcao inicio()
 	{
 		cadeia nome, senha
+		inteiro opcao
 		
 		escreva("Bem-vindo ao sistema da Maratona Filmes.\n")
 
@@ -29,6 +30,34 @@ programa
 		escreva("\n4 - Excluir filme.")
 		escreva("\n5 - Sair.")
 		escreva("\n-------------------------------------------------------")
+
+		escreva("\nDigite a opção desejada: ")
+		leia(opcao)
+
+		escolha (opcao) {
+			caso 1:
+
+			pare
+
+			caso 2:
+
+			pare
+
+			caso 3:
+
+			pare
+
+			caso 4:
+
+			pare
+
+			caso 5:
+
+			pare
+
+			caso contrario:
+				escreva("\nOpção inválida!")
+		}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -36,7 +65,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 132; 
+ * @POSICAO-CURSOR = 989; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
