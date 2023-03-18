@@ -48,7 +48,7 @@ programa
 			pare
 
 			caso 3:
-
+				listarFilmes()
 			pare
 
 			caso 4:
@@ -78,7 +78,24 @@ programa
 		escreva("Digite a descrição do filme: ")
 		leia(descricoesFilmes[contador])
 
+		escreva("\nFilme cadastrado com sucesso!")
+		
+		escreva("\n--------------------------------------------------------")
+		
 		contador++
+	}
+
+	funcao listarFilmes() {
+		escreva("\n--------------------|LISTAR FILMES|-------------------")
+
+		para (inteiro i = 0; i < contador; i++) {
+			escreva("\nNome: ", nomesFilmes[i])
+			escreva("\nGênero: ", generosFilmes[contador])
+			escreva("\nFaixa Etária: ", faixasEtarias[contador])
+			escreva("\nDescrição: ", descricoesFilmes[contador])
+		}
+		
+		escreva("\n--------------------------------------------------------")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -86,7 +103,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1544; 
+ * @POSICAO-CURSOR = 2029; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
