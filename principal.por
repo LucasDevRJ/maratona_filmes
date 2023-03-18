@@ -27,41 +27,44 @@ programa
 		escreva("\nLogin efetuado com sucesso!\n")
 		escreva("Olá ", nome, " escolha uma das opções do menu.\n")
 
-		escreva("\n--------------------|MENU PRINCIPAL|-------------------")
-		escreva("\n1 - Cadastrar filme.")
-		escreva("\n2 - Atualizar filme.")
-		escreva("\n3 - Listar filmes.")
-		escreva("\n4 - Excluir filme.")
-		escreva("\n5 - Sair.")
-		escreva("\n-------------------------------------------------------")
-
-		escreva("\nDigite a opção desejada: ")
-		leia(opcao)
-
-		escolha (opcao) {
-			caso 1:
-				cadastrarFilme()
-			pare
-
-			caso 2:
-
-			pare
-
-			caso 3:
-				listarFilmes()
-			pare
-
-			caso 4:
-
-			pare
-
-			caso 5:
-
-			pare
-
-			caso contrario:
-				escreva("\nOpção inválida!")
-		}
+		faca {
+			escreva("\n--------------------|MENU PRINCIPAL|-------------------")
+			escreva("\n1 - Cadastrar filme.")
+			escreva("\n2 - Atualizar filme.")
+			escreva("\n3 - Listar filmes.")
+			escreva("\n4 - Excluir filme.")
+			escreva("\n5 - Sair.")
+			escreva("\n-------------------------------------------------------")
+	
+			escreva("\nDigite a opção desejada: ")
+			leia(opcao)
+	
+			escolha (opcao) {
+				caso 1:
+					cadastrarFilme()
+				pare
+	
+				caso 2:
+	
+				pare
+	
+				caso 3:
+					listarFilmes()
+				pare
+	
+				caso 4:
+	
+				pare
+	
+				caso 5:
+	
+				pare
+	
+				caso contrario:
+					escreva("\nOpção inválida!")
+			}
+			
+		} enquanto (opcao != 5)
 	}
 
 	funcao cadastrarFilme() {
@@ -90,9 +93,10 @@ programa
 
 		para (inteiro i = 0; i < contador; i++) {
 			escreva("\nNome: ", nomesFilmes[i])
-			escreva("\nGênero: ", generosFilmes[contador])
-			escreva("\nFaixa Etária: ", faixasEtarias[contador])
-			escreva("\nDescrição: ", descricoesFilmes[contador])
+			escreva("\nGênero: ", generosFilmes[i])
+			escreva("\nFaixa Etária: ", faixasEtarias[i])
+			escreva("\nDescrição: ", descricoesFilmes[i])
+			escreva("\n")
 		}
 		
 		escreva("\n--------------------------------------------------------")
@@ -103,7 +107,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2029; 
+ * @POSICAO-CURSOR = 501; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
