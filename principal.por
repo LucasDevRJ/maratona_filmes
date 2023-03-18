@@ -18,6 +18,12 @@ programa
 			escreva("Digite a senha: ")
 			leia(senha)
 		}
+
+		escreva("Login efetuado com sucesso!\n")
+		escreva("Olá ", nome, " escolha uma das opções do menu.\n")
+
+		escreva("--------------------|MENU|-------------------")
+		escreva("")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -25,7 +31,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 308; 
+ * @POSICAO-CURSOR = 503; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
