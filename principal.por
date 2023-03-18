@@ -3,9 +3,12 @@ programa
 	
 	funcao inicio()
 	{
-		cadeia nome, senha
-		inteiro opcao
-		
+		cadeia nome, senha, nomeFilme
+		inteiro opcao, contador
+
+		nomeFilme = ""
+		contador = 0
+
 		escreva("Bem-vindo ao sistema da Maratona Filmes.\n")
 
 		escreva("\nDigite seu nome: ")
@@ -36,7 +39,7 @@ programa
 
 		escolha (opcao) {
 			caso 1:
-
+				cadastrarFilme(nomeFilme, contador)
 			pare
 
 			caso 2:
@@ -59,13 +62,19 @@ programa
 				escreva("\nOpção inválida!")
 		}
 	}
+
+	funcao cadastrarFilme(cadeia &nomeFilme, inteiro &contador) {
+		escreva("\n--------------------|CADASTRAR FILME|-------------------")
+		escreva("\nDigite o nome do filme: ")
+		leia(nomeFilme)
+	}
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 989; 
+ * @POSICAO-CURSOR = 1234; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
