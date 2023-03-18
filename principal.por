@@ -7,7 +7,7 @@ programa
 		
 		escreva("Bem-vindo ao sistema da Maratona Filmes.\n")
 
-		escreva("Digite seu nome: ")
+		escreva("\nDigite seu nome: ")
 		leia(nome)
 
 		escreva("Digite a senha: ")
@@ -19,11 +19,16 @@ programa
 			leia(senha)
 		}
 
-		escreva("Login efetuado com sucesso!\n")
+		escreva("\nLogin efetuado com sucesso!\n")
 		escreva("Olá ", nome, " escolha uma das opções do menu.\n")
 
-		escreva("--------------------|MENU|-------------------")
-		escreva("")
+		escreva("\n--------------------|MENU PRINCIPAL|-------------------")
+		escreva("\n1 - Cadastrar filme.")
+		escreva("\n2 - Atualizar filme.")
+		escreva("\n3 - Listar filmes.")
+		escreva("\n4 - Excluir filme.")
+		escreva("\n5 - Sair.")
+		escreva("\n-------------------------------------------------------")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -31,7 +36,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 503; 
+ * @POSICAO-CURSOR = 132; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
