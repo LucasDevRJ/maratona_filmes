@@ -1,16 +1,14 @@
 programa
 {
+	cadeia nomesFilmes[10], generosFilmes[10], descricoesFilmes[10], faixasEtarias[10]
+	inteiro contador
 	
 	funcao inicio()
 	{
-		cadeia nome, senha, nomeFilme, generoFilme, descricaoFilme
-		inteiro opcao, contador, faixaEtaria
+		cadeia nome, senha
+		inteiro opcao
 
-		nomeFilme = ""
-		generoFilme = ""
-		descricaoFilme = ""
 		contador = 0
-		faixaEtaria = 0
 
 		escreva("Bem-vindo ao sistema da Maratona Filmes.\n")
 
@@ -42,7 +40,7 @@ programa
 
 		escolha (opcao) {
 			caso 1:
-				cadastrarFilme(nomeFilme, generoFilme, faixaEtaria, descricaoFilme)
+				cadastrarFilme()
 			pare
 
 			caso 2:
@@ -66,19 +64,21 @@ programa
 		}
 	}
 
-	funcao cadastrarFilme(cadeia &nomeFilme, cadeia &generoFilme, inteiro &faixaEtaria, cadeia &descricaoFilme) {
+	funcao cadastrarFilme() {
 		escreva("\n--------------------|CADASTRAR FILME|-------------------")
 		escreva("\nDigite o nome do filme: ")
-		leia(nomeFilme)
+		leia(nomesFilmes[contador])
 
 		escreva("Digite o gênero do filme: ")
-		leia(generoFilme)
+		leia(generosFilmes[contador])
 
 		escreva("Digite a faixa etária do filme: ")
-		leia(faixaEtaria)
+		leia(faixasEtarias[contador])
 
 		escreva("Digite a descrição do filme: ")
-		leia(descricaoFilme)
+		leia(descricoesFilmes[contador])
+
+		contador++
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -86,7 +86,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 224; 
+ * @POSICAO-CURSOR = 1544; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
