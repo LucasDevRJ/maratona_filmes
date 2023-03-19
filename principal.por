@@ -134,20 +134,26 @@ programa
 	}
 
 	funcao atualizarFilme() {
-		escreva("\n--------------------|EXCLUIR FILME|-------------------")
+		escreva("\n--------------------|ATUALIZAR FILME|-------------------")
 
 		escreva("\nDigite a ID do filme: ")
 		leia(identificadorDesejado)
 
 		para (inteiro i = 0; i < contador; i++) {
 			se (identificadorDesejado == identificadoresFilmes[i]) {
-				identificadoresFilmes[i] = 0
-				nomesFilmes[i] = ""
-				generosFilmes[i] = ""
-				faixasEtariasFilmes[i] = 0
-				descricoesFilmes[i] = ""
-				
-				escreva("\nFilme excluído com sucesso!")
+				escreva("\nDigite o nome do filme: ")
+				leia(nomesFilmes[i])
+		
+				escreva("Digite o gênero do filme: ")
+				leia(generosFilmes[i])
+		
+				escreva("Digite a faixa etária do filme: ")
+				leia(faixasEtariasFilmes[i])
+		
+				escreva("Digite a descrição do filme: ")
+				leia(descricoesFilmes[i])
+		
+				escreva("\nFilme atualizado com sucesso!")
 			} senao {
 				escreva("\nID inexistente.")
 			}
@@ -161,7 +167,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 3738; 
+ * @POSICAO-CURSOR = 3768; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
