@@ -1,7 +1,7 @@
 programa
 {
-	cadeia nomesFilmes[10], generosFilmes[10], descricoesFilmes[10], faixasEtariasFilmes[10] 
-	inteiro contador, identificador, identificadoresFilmes[10]
+	cadeia nomesFilmes[10], generosFilmes[10], descricoesFilmes[10]
+	inteiro contador, identificador, identificadoresFilmes[10], faixasEtariasFilmes[10], identificadorDesejado
 	
 	funcao inicio()
 	{
@@ -108,7 +108,26 @@ programa
 	}
 
 	funcao excluirFilme() {
+		escreva("\n--------------------|EXCLUIR FILME|-------------------")
+
+		escreva("\nDigite a ID do filme: ")
+		leia(identificadorDesejado)
+
+		para (inteiro i = 0; i < contador; i++) {
+			se (identificadorDesejado == identificadoresFilmes[i]) {
+				identificadoresFilmes[i] = 0
+				nomesFilmes[i] = ""
+				generosFilmes[i] = ""
+				faixasEtariasFilmes[i] = 0
+				descricoesFilmes[i] = ""
+				
+				escreva("\nFilme excluído com sucesso!")
+			} senao {
+				escreva("\nID inexistente.")
+			}
+		}
 		
+		escreva("\n--------------------------------------------------------")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -116,7 +135,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2426; 
+ * @POSICAO-CURSOR = 2832; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
