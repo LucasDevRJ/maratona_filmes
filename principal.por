@@ -1,7 +1,7 @@
 programa
 {
-	cadeia nomesFilmes[10], generosFilmes[10], descricoesFilmes[10], faixasEtarias[10]
-	inteiro contador, identificador
+	cadeia nomesFilmes[10], generosFilmes[10], descricoesFilmes[10], faixasEtariasFilmes[10] 
+	inteiro contador, identificador, identificadoresFilmes[10]
 	
 	funcao inicio()
 	{
@@ -77,15 +77,18 @@ programa
 		leia(generosFilmes[contador])
 
 		escreva("Digite a faixa etária do filme: ")
-		leia(faixasEtarias[contador])
+		leia(faixasEtariasFilmes[contador])
 
 		escreva("Digite a descrição do filme: ")
 		leia(descricoesFilmes[contador])
 
+		identificadoresFilmes[contador] = identificador
+
 		escreva("\nFilme cadastrado com sucesso!")
 		
 		escreva("\n--------------------------------------------------------")
-		
+
+		identificador++
 		contador++
 	}
 
@@ -95,7 +98,7 @@ programa
 		para (inteiro i = 0; i < contador; i++) {
 			escreva("\nNome: ", nomesFilmes[i])
 			escreva("\nGênero: ", generosFilmes[i])
-			escreva("\nFaixa Etária: ", faixasEtarias[i])
+			escreva("\nFaixa Etária: ", faixasEtariasFilmes[i])
 			escreva("\nDescrição: ", descricoesFilmes[i])
 			escreva("\n")
 		}
@@ -108,7 +111,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 224; 
+ * @POSICAO-CURSOR = 2180; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
