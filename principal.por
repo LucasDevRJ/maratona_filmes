@@ -1,7 +1,7 @@
 programa
 {
 	cadeia nomesFilmes[10], generosFilmes[10], descricoesFilmes[10], faixasEtarias[10]
-	inteiro contador
+	inteiro contador, identificador
 	
 	funcao inicio()
 	{
@@ -9,6 +9,7 @@ programa
 		inteiro opcao
 
 		contador = 0
+		identificador = 100
 
 		escreva("Bem-vindo ao sistema da Maratona Filmes.\n")
 
@@ -107,7 +108,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 501; 
+ * @POSICAO-CURSOR = 224; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
