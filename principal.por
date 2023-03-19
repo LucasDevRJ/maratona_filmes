@@ -95,13 +95,16 @@ programa
 	funcao listarFilmes() {
 		escreva("\n--------------------|LISTAR FILMES|-------------------")
 
-		para (inteiro i = 0; i < contador; i++) {
-			escreva("\nID: ", identificadoresFilmes[i])
-			escreva("\nNome: ", nomesFilmes[i])
-			escreva("\nGênero: ", generosFilmes[i])
-			escreva("\nFaixa Etária: ", faixasEtariasFilmes[i])
-			escreva("\nDescrição: ", descricoesFilmes[i])
-			escreva("\n")
+		para (inteiro i = 0; i < contador; i++) { 
+			se (identificadoresFilmes[i] >= 100) {
+				escreva("\nID: ", identificadoresFilmes[i])
+				escreva("\nNome: ", nomesFilmes[i])
+				escreva("\nGênero: ", generosFilmes[i])
+				escreva("\nFaixa Etária: ", faixasEtariasFilmes[i])
+				escreva("\nDescrição: ", descricoesFilmes[i])
+				escreva("\n")
+			} senao
+			escreva("\nNão existem filmes cadastrados!")
 		}
 		
 		escreva("\n--------------------------------------------------------")
@@ -135,7 +138,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2832; 
+ * @POSICAO-CURSOR = 2443; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
