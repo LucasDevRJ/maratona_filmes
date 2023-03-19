@@ -46,7 +46,7 @@ programa
 				pare
 	
 				caso 2:
-	
+					atualizarFilme()
 				pare
 	
 				caso 3:
@@ -132,13 +132,36 @@ programa
 		
 		escreva("\n--------------------------------------------------------")
 	}
+
+	funcao atualizarFilme() {
+		escreva("\n--------------------|EXCLUIR FILME|-------------------")
+
+		escreva("\nDigite a ID do filme: ")
+		leia(identificadorDesejado)
+
+		para (inteiro i = 0; i < contador; i++) {
+			se (identificadorDesejado == identificadoresFilmes[i]) {
+				identificadoresFilmes[i] = 0
+				nomesFilmes[i] = ""
+				generosFilmes[i] = ""
+				faixasEtariasFilmes[i] = 0
+				descricoesFilmes[i] = ""
+				
+				escreva("\nFilme excluído com sucesso!")
+			} senao {
+				escreva("\nID inexistente.")
+			}
+		}
+		
+		escreva("\n--------------------------------------------------------")
+	}
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2443; 
+ * @POSICAO-CURSOR = 3738; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
