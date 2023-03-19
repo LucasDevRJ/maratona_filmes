@@ -54,7 +54,7 @@ programa
 				pare
 	
 				caso 4:
-	
+					excluirFilme()
 				pare
 	
 				caso 5:
@@ -96,6 +96,7 @@ programa
 		escreva("\n--------------------|LISTAR FILMES|-------------------")
 
 		para (inteiro i = 0; i < contador; i++) {
+			escreva("\nID: ", identificadoresFilmes[i])
 			escreva("\nNome: ", nomesFilmes[i])
 			escreva("\nGênero: ", generosFilmes[i])
 			escreva("\nFaixa Etária: ", faixasEtariasFilmes[i])
@@ -105,13 +106,17 @@ programa
 		
 		escreva("\n--------------------------------------------------------")
 	}
+
+	funcao excluirFilme() {
+		
+	}
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2180; 
+ * @POSICAO-CURSOR = 2426; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
