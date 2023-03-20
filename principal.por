@@ -11,6 +11,7 @@ programa
 
 		contador = 0
 		identificador = 100
+		achou = falso
 
 		escreva("Bem-vindo ao sistema da Maratona Filmes.\n")
 
@@ -104,9 +105,12 @@ programa
 				escreva("\nFaixa Etária: ", faixasEtariasFilmes[i])
 				escreva("\nDescrição: ", descricoesFilmes[i])
 				escreva("\n")
-			} senao {
-				escreva("\nNão existem filmes cadastrados!")
-			}
+				achou = verdadeiro
+			} 
+		}
+		
+		se (achou == falso) {
+			escreva("\nID inexistente!")
 		}
 		
 		escreva("\n--------------------------------------------------------")
@@ -125,11 +129,14 @@ programa
 				generosFilmes[i] = ""
 				faixasEtariasFilmes[i] = 0
 				descricoesFilmes[i] = ""
-				
+
+				achou = verdadeiro
 				escreva("\nFilme excluído com sucesso!")
-			} senao {
-				escreva("\nID inexistente.")
 			}
+		}
+
+		se (achou == falso) {
+			escreva("\nID inexistente!")
 		}
 		
 		escreva("\n--------------------------------------------------------")
@@ -156,9 +163,13 @@ programa
 				leia(descricoesFilmes[i])
 		
 				escreva("\nFilme atualizado com sucesso!")
-			} senao {
-				escreva("\nID inexistente.")
-			}
+
+				achou = verdadeiro
+			} 
+		}
+
+		se (achou == falso) {
+			escreva("\nID inexistente!")
 		}
 		
 		escreva("\n--------------------------------------------------------")
@@ -169,7 +180,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 197; 
+ * @POSICAO-CURSOR = 3953; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
