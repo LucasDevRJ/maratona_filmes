@@ -1,7 +1,7 @@
 programa
 {
 	cadeia nomesFilmes[10], generosFilmes[10], descricoesFilmes[10]
-	inteiro contador, identificador, identificadoresFilmes[10], faixasEtariasFilmes[10], identificadorDesejado
+	inteiro contador, identificador, identificadoresFilmes[10], faixasEtariasFilmes[10], identificadorDesejado, tamanhoVetor
 	logico achou
 	
 	funcao inicio()
@@ -10,6 +10,7 @@ programa
 		inteiro opcao
 
 		contador = 0
+		tamanhoVetor = 0
 		identificador = 100
 		achou = falso
 
@@ -60,7 +61,7 @@ programa
 				pare
 	
 				caso 5:
-	
+					sair()
 				pare
 	
 				caso contrario:
@@ -92,25 +93,30 @@ programa
 
 		identificador++
 		contador++
+		tamanhoVetor++
 	}
 
 	funcao listarFilmes() {
 		escreva("\n--------------------|LISTAR FILMES|-------------------")
 
-		para (inteiro i = 0; i < contador; i++) { 
-			se (identificadoresFilmes[i] >= 100) {
-				escreva("\nID: ", identificadoresFilmes[i])
-				escreva("\nNome: ", nomesFilmes[i])
-				escreva("\nGênero: ", generosFilmes[i])
-				escreva("\nFaixa Etária: ", faixasEtariasFilmes[i])
-				escreva("\nDescrição: ", descricoesFilmes[i])
-				escreva("\n")
-				achou = verdadeiro
-			} 
-		}
-		
-		se (achou == falso) {
-			escreva("\nID inexistente!")
+		se (tamanhoVetor > 0) {
+			para (inteiro i = 0; i < contador; i++) { 
+				se (identificadoresFilmes[i] >= 100) {
+					escreva("\nID: ", identificadoresFilmes[i])
+					escreva("\nNome: ", nomesFilmes[i])
+					escreva("\nGênero: ", generosFilmes[i])
+					escreva("\nFaixa Etária: ", faixasEtariasFilmes[i])
+					escreva("\nDescrição: ", descricoesFilmes[i])
+					escreva("\n")
+					achou = verdadeiro
+				} 
+			}
+
+			se (achou == falso) {
+				escreva("\nID inexistente!")
+			}
+		} senao {
+			escreva("\nNão existem filmes cadastrados!")
 		}
 		
 		escreva("\n--------------------------------------------------------")
@@ -174,13 +180,17 @@ programa
 		
 		escreva("\n--------------------------------------------------------")
 	}
+
+	funcao sair() {
+		escreva("\nObrigado e volte sempre.")
+	}
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 3953; 
+ * @POSICAO-CURSOR = 2688; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
