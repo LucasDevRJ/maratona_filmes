@@ -1,7 +1,7 @@
 programa
 {
 	cadeia nomesFilmes[10], generosFilmes[10], descricoesFilmes[10]
-	inteiro contador, identificador, identificadoresFilmes[10], faixasEtariasFilmes[10], identificadorDesejado, tamanhoVetor
+	inteiro contador, identificador, identificadoresFilmes[10], faixasEtariasFilmes[10], duracoesFilmes[10], identificadorDesejado, tamanhoVetor
 	logico achou
 	
 	funcao inicio()
@@ -190,7 +190,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2688; 
+ * @POSICAO-CURSOR = 181; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
