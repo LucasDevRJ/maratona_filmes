@@ -138,6 +138,7 @@ programa
 				nomesFilmes[i] = ""
 				generosFilmes[i] = ""
 				faixasEtariasFilmes[i] = 0
+				duracoesFilmes[i] = 0
 				descricoesFilmes[i] = ""
 
 				achou = verdadeiro
@@ -194,7 +195,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2683; 
+ * @POSICAO-CURSOR = 3335; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
