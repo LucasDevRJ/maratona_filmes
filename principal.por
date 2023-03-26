@@ -109,6 +109,7 @@ programa
 					escreva("\nNome: ", nomesFilmes[i])
 					escreva("\nGênero: ", generosFilmes[i])
 					escreva("\nFaixa Etária: ", faixasEtariasFilmes[i])
+					escreva("\nDuração: ", duracoesFilmes[i])
 					escreva("\nDescrição: ", descricoesFilmes[i])
 					escreva("\n")
 					achou = verdadeiro
@@ -193,7 +194,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1860; 
+ * @POSICAO-CURSOR = 2683; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
